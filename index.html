@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lúmina Beauty: cuidado consciente para revelar tu brillo natural." />
+    <title>Lúmina Beauty | Tu ritual de belleza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#inicio" aria-label="Lúmina Beauty, inicio">LÚMINA<span>BEAUTY</span></a>
+      <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nuestra historia</a>
+        <a class="nav-cta" href="#contacto">Contáctanos</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Belleza que nace de ti</p>
+          <h1>Un ritual para<br /><em>tu luz natural.</em></h1>
+          <p class="hero-text">Fórmulas limpias, ingredientes botánicos y momentos de autocuidado para que tu piel se sienta tan bien como se ve.</p>
+          <a class="button" href="#productos">Descubre la colección <span>→</span></a>
+        </div>
+        <div class="hero-art" role="img" aria-label="Composición abstracta en tonos rosados con productos de belleza">
+          <div class="sun"></div>
+          <div class="arch arch-one"></div>
+          <div class="arch arch-two"></div>
+          <div class="bottle bottle-tall"><span>LÚMINA</span><i></i></div>
+          <div class="bottle bottle-round"><span>GLOW<br />SERUM</span></div>
+          <div class="flower flower-one">✦</div>
+          <div class="flower flower-two">✦</div>
+        </div>
+      </section>
+
+      <section class="promise" id="nosotros">
+        <p class="eyebrow">Creemos en una belleza sin complicaciones</p>
+        <h2>Lo esencial para cuidar<br />lo que te hace única.</h2>
+        <div class="promise-grid">
+          <article><span>01</span><h3>Ingredientes conscientes</h3><p>Seleccionamos activos de origen natural, eficaces y amables con tu piel.</p></article>
+          <article><span>02</span><h3>Hecho para tu ritual</h3><p>Texturas sensoriales que convierten cada paso en un pequeño momento para ti.</p></article>
+          <article><span>03</span><h3>Con amor al planeta</h3><p>Empaques reciclables y fórmulas libres de crueldad animal.</p></article>
+        </div>
+      </section>
+
+      <section class="products" id="productos">
+        <div class="section-heading"><div><p class="eyebrow">Nuestros favoritos</p><h2>Pequeños gestos,<br /><em>gran luminosidad.</em></h2></div><a href="#contacto" class="text-link">Ver toda la colección →</a></div>
+        <div class="product-grid">
+          <article class="product-card"><div class="product-image peach"><div class="mini-bottle serum"><span>GLOW<br />SERUM</span></div></div><p class="product-type">Tratamiento</p><h3>Glow Serum</h3><p class="product-description">Un concentrado de vitamina C para despertar la luminosidad.</p></article>
+          <article class="product-card featured"><div class="product-image pink"><div class="mini-bottle cream"><span>LÚMINA<br />CREAM</span></div></div><p class="product-type">Hidratación</p><h3>Cloud Cream</h3><p class="product-description">Hidratación ligera que deja la piel suave como una nube.</p></article>
+          <article class="product-card"><div class="product-image lilac"><div class="mini-bottle mist"><span>FACE<br />MIST</span></div></div><p class="product-type">Refrescante</p><h3>Bloom Mist</h3><p class="product-description">Una bruma floral para refrescar y equilibrar tu piel.</p></article>
+        </div>
+      </section>
+
+      <section class="contact" id="contacto">
+        <div class="contact-intro"><p class="eyebrow">Hablemos de belleza</p><h2>Tu próxima pausa<br /><em>empieza aquí.</em></h2><p>¿Tienes una pregunta o quieres saber más sobre Lúmina? Nos encantará leerte.</p></div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row"><div class="field"><label for="name">Nombre</label><input id="name" name="name" type="text" placeholder="Tu nombre" /><small></small></div><div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" placeholder="tu@correo.com" /><small></small></div></div>
+          <div class="field"><label for="message">Mensaje</label><textarea id="message" name="message" rows="4" placeholder="¿Cómo podemos ayudarte?"></textarea><small></small></div>
+          <button class="button" type="submit">Enviar mensaje <span>→</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="logo" href="#inicio">LÚMINA<span>BEAUTY</span></a><p>© 2026 Lúmina Beauty. Hecho para brillar.</p><div class="social-links"><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a><a href="https://tiktok.com" target="_blank" rel="noreferrer">TikTok</a><a href="https://pinterest.com" target="_blank" rel="noreferrer">Pinterest</a></div></footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
